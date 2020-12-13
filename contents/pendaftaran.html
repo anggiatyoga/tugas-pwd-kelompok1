@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <link rel="stylesheet" href="../assets/css/styles.css"> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Cabin:wght@400;700&family=Lato&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+        }
+        .body-pendaftaran h2 {
+            font-family: 'Amatic SC', cursive;
+            font-size: 2em;
+            text-decoration: none;
+            color: #353331;
+            text-align: center; 
+            margin-bottom: 10px;
+        }
+
+        .body-pendaftaran  .site-banner-info img{
+            width: 100%;
+            height: 300px;
+        }
+
+        .body-pendaftaran .form-contact {
+            height: auto;
+            background-color: #3B539B;
+            padding: 50px;
+        }
+
+        .body-pendaftaran .form-contact h2 {
+            font-family: 'Amatic SC', cursive;
+            font-style: normal;
+            text-decoration: none;
+            color: white;
+            text-align: center; 
+            margin-bottom: 10px;
+        }
+
+        .body-pendaftaran .form-contact input[type=text], select, textarea {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            resize: vertical;
+        }
+
+        .body-pendaftaran .form-contact input[type=email], select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            resize: vertical;
+        }
+
+        .body-pendaftaran .form-contact .row input[type=submit] {
+            margin-top: 20px;
+            background-color: #F26163;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 18px;
+            cursor: pointer;
+            float: left;
+        }
+
+        .body-pendaftaran .form-contact .row input[type=submit]:hover {
+            background-color: #e03d40;
+        }
+
+        /* Clear floats after the columns */
+        .body-pendaftaran .form-contact .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .body-pendaftaran footer {
+            background-color: #4FC083;
+            position: relative;
+            display: flex !important;
+            width: 100%;
+            height: 310px;
+            align-items: center;
+        }
+
+        .body-pendaftaran .site-footer-info  span{
+            font-family: 'Amatic SC', cursive;
+            font-weight: normal;
+            font-style: normal;
+            font-size: 35px;
+            text-align: center;
+            color:  white;
+        }
+
+        .body-pendaftaran .site-footer-info  .line-footer{
+            width: 20%;
+            margin: auto;
+            border: 5px dashed #fff;
+            border-style: none none dotted; 
+            color: #fff; 
+            background-color: #4FC083
+        }
+
+        .body-pendaftaran .site-footer-info div .contact-us {
+            margin-top: 50px;
+        }
+
+        .body-pendaftaran .site-footer-info div .contact-us .alamat .label-alamat {
+            font-family: 'Cabin', sans-serif; 
+            font-size: 26px; 
+            margin-bottom: 20px; 
+            color: white;
+        }
+
+        .body-pendaftaran .site-footer-info div .contact-us .alamat .content-alamat {
+            font-family: 'Cabin', sans-serif; 
+            font-weight: lighter; 
+            color: white;
+        }
+
+        .body-pendaftaran .site-footer-info div .contact-us .customer .label-customer {
+            font-family: 'Cabin', sans-serif; 
+            font-size: 26px; 
+            margin-bottom: 20px; 
+            color: white;
+        }
+
+        .body-pendaftaran .site-footer-info div .contact-us .customer .content-customer {
+            font-family: 'Cabin', sans-serif; 
+            font-weight: lighter; 
+            color: white;
+        }
+
+        @media only screen and (max-width: 731px){
+            .body-pendaftaran  .site-banner-info img{
+                height: 200px;
+            }
+
+            .body-pendaftaran footer {
+                height: 150px;
+            }
+
+            .body-pendaftaran .site-footer-info  span{
+                color: white;
+                font-size: 20px;
+            }
+
+            .body-pendaftaran .site-footer-info div .contact-us {
+                margin-top: 10px;
+            }
+        
+            .body-pendaftaran .site-footer-info div .contact-us .alamat .label-alamat {
+                font-size: 14px; 
+                margin-bottom: 5px; 
+            }
+        
+            .body-pendaftaran .site-footer-info div .contact-us .alamat .content-alamat {
+                font-size: 10px;
+            }
+        
+            .body-pendaftaran .site-footer-info div .contact-us .customer .label-customer {
+                font-size: 14px; 
+                margin-bottom: 10px; 
+            }
+        
+            .body-pendaftaran .site-footer-info div .contact-us .customer .content-customer {
+                font-size: 10px;
+            }
+
+        }
+        
+    </style>
+</head>
+<body class="body-pendaftaran">
+    <!-- Header -->
+    <div class="site-banner-info">
+        <img src="../assets/images/banner_pendaftaran.jpg" />
+    </div>
+
+    <!-- PPDB -->
+    <div style="margin: 5%;">
+        <h2>PPDB (Penerimaan Peserta Didik Baru)</h2>
+        <hr style="
+      width: 50%;
+      margin: auto;
+      border: 5px dotted #fb6667;
+      border-style: none none dotted; 
+      color: #fff; 
+      background-color: #fff;">
+
+      <div class="kelas">
+        <p style="margin-top: 50px; font-family: 'Cabin', sans-serif; color: #8F8F8F; font-weight: bold; font-size: 18px;">
+            KELAS
+          </p>
+          <ul>
+            <li style="margin-top: 15px; font-family: 'Cabin', sans-serif; color: #8F8F8F;">Kelompok Bermain usia anak minimal 2,7 thn.</li>
+            <li style="margin-top: 5px; font-family: 'Cabin', sans-serif; color: #8F8F8F;">Kelompok A, usia anak minimal 3,7 thn.</li>
+            <li style="margin-top: 5px; font-family: 'Cabin', sans-serif; color: #8F8F8F;">Kelompok B, usia anak minimal 4,7 thn.</li>
+         </ul>
+      </div>
+
+      <div class="jadwal">
+        <p style="margin-top: 50px; font-family: 'Cabin', sans-serif; color: #8F8F8F; font-weight: bold; font-size: 18px;">
+            JADWAL PENDAFTARAN
+          </p>
+          <ul>
+            <li style="margin-top: 15px; font-family: 'Cabin', sans-serif; color: #8F8F8F;">Pendaftaran mulai Januari s.d. Juli 2019.</li>
+            <li style="margin-top: 5px; font-family: 'Cabin', sans-serif; color: #8F8F8F;">
+                Mengembalikan Formulir 1 minggu setelah mendaftar dilengkapi :
+                <ul>
+                    <li>Foto copy Akte kelahiran 1 lembar.</li>
+                    <li>Foto copy Kartu keluarga 1 lembar.</li>
+                    <li>Pas foto berwarna ukuran 3×4 cm = 2 lembar.</li>
+                </ul>
+            </li>
+            <li style="margin-top: 5px; font-family: 'Cabin', sans-serif; color: #8F8F8F;">Observasi calon murid dengan guru kelas dan wawancara orang tua dengan Kepala TK.</li>
+            <li style="margin-top: 5px; font-family: 'Cabin', sans-serif; color: #8F8F8F;">Penyelesaian Administrasi Keuangan selambat-lambatnya 1 minggu setelah dinyatakan diterima.</li>
+            <li style="margin-top: 5px; font-family: 'Cabin', sans-serif; color: #8F8F8F;">Masuk sekolah ( Pembagian kelas ) hari Senin tanggal, 18 Juli 2019 jam. 08.00</li>
+
+        </ul>
+      </div>
+
+      <div class="info-pendaftaran">
+        <p style="margin-top: 50px; font-family: 'Cabin', sans-serif; color: #8F8F8F; font-weight: bold; font-size: 18px;">
+            INFO PENDAFTARAN
+          </p>
+          <ul>
+            <li style="margin-top: 15px; font-family: 'Cabin', sans-serif; color: #8F8F8F;">Sekretariat TK Perguruan ”Cikini” Jln. Cikini Raya No.74-76 Jakarta Pusat. 
+                <br>Telepon (021) 3102287, 0815 8542 9521</li>
+            <li style="margin-top: 5px; font-family: 'Cabin', sans-serif; color: #8F8F8F;">W a k t u : Senin s.d. Jum’at : pukul 07.30-15.00 WIB. Sabtu : pukul 07.30-12.00 WIB.</li>
+         </ul>
+      </div>
+
+      <div class="tarif">
+        <p style="margin-top: 50px; font-family: 'Cabin', sans-serif; color: #8F8F8F; font-weight: bold; font-size: 18px;">
+            TARIF
+          </p>
+          <ul>
+            <li style="margin-top: 15px; font-family: 'Cabin', sans-serif; color: #8F8F8F;">Uang Formulir Pendaftaran Rp. 250.000,-</li>
+            <li style="margin-top: 5px; font-family: 'Cabin', sans-serif; color: #8F8F8F;">Bagi orangtua murid yang mendaftaran anaknya, dimana kakak/adiknya saat ini bersekolah di Perguruan ”Cikini” diberi keringanan pembayaran Uang Pangkal sebesar 10 % dan dapat diangsur sebanyak 3x dalam 3 bulan terhitung dari tanggal, diterimanya calon murid</li>
+            <li style="margin-top: 5px; font-family: 'Cabin', sans-serif; color: #8F8F8F;">Membayar Uang sekolah bulan Juli 2019</li>
+         </ul>
+      </div>
+
+    </div>
+
+    <!-- HUBUNGI KAMI -->
+    <div class="form-contact">
+        <h2>HUBUNGI KAMI</h2>
+        <p style="font-family: 'Cabin', sans-serif; color: white; text-align: center; width: 90%; margin-left: auto; margin-right: auto; margin-bottom: 50px;">Jika ada pertanyaan mengenai KB-TK Quantum Inti Indonesia dan Untuk mengetahui informasi lebih detail,Silahkan kirim pesan dibawah ini</p>
+        <input type="text" id="fname" name="fname" placeholder="Name*"><br>
+        <input type="email" id="femail" name="femail" placeholder="Email*"><br>
+        <input type="text" id="fsubject" name="fsubject" placeholder="Subject*"><br>
+        <textarea name="message" id="" cols="30" rows="10" placeholder="Message*"></textarea><br>
+        <div class="row">
+            <input type="submit" value="Kirim Pesan">
+          </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="site-footer-info">    
+        <div style="margin: 5%; width: 100%;text-align: center;">
+            <span>Kontak Kami</span> 
+            <hr class="line-footer">
+            <div class="contact-us">
+                <div class="alamat"  style="width: 40%; text-align: left; float: left;">
+                    <p class="label-alamat">Alamat</p>
+                    <p class="content-alamat">Jl. Cimatis Jati Karya, Kelurahan Cibubur, <br>Kecamatan Jatisampurna, <br>Kabupaten Bekasi, Provinsi Jawa Barat</p>
+                </div>
+                <div class="customer"  style="width: 40%; text-align: left; float: right;">
+                    <p class="label-customer">Hubungi Kami</p>
+                    <p class="content-customer">Telp. 0318290140 <br>Fax. 021 8430 3333 <br>Email. sqiindonesia@gmail.com <br>info@sqiindonesia.sch.id</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

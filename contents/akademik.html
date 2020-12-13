@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <link rel="stylesheet" href="../assets/css/styles.css"> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Cabin:wght@400;700&family=Lato&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+        }
+        
+        .body-akademik h2 {
+            font-family: 'Amatic SC', cursive;
+            font-size: 2em;
+            text-decoration: none;
+            color: #353331;
+            text-align: center; 
+            margin-bottom: 10px;
+        }
+
+        .body-akademik  .site-banner-info img{
+            width: 100%;
+            height: 300px;
+        }
+
+        .body-akademik .column-item {
+            margin-top: 50px;
+            margin-left: 50px;
+            float: left;
+            width: 300px;
+        }
+
+        .body-akademik .column-item img {
+            box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.3);
+            width: 100%;
+            height: auto;
+        }
+
+        .body-akademik .column-item .desc {
+            color: #8F8F8F;
+            font-family: 'Cabin', sans-serif;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .body-akademik footer {
+            position: relative;
+            display: flex !important;
+            width: 100%;
+            align-items: center;
+        }
+
+        .body-akademik  .site-footer-info img{
+            filter: brightness(50%);
+            margin-top: 10%;
+            width: 100%;
+            height: 310px;
+        }
+
+        .body-akademik .site-footer-info .text-daftar{
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .body-akademik .site-footer-info .text-daftar p{
+            font-family: 'Amatic SC', cursive;
+            font-size: 3em;
+            text-align: center;
+            color:  white;
+        }
+
+        @media only screen and (max-width: 731px){
+            .body-akademik  .site-banner-info img{
+                height: 200px;
+            }
+
+            .body-akademik .column-item {
+                width: 70%;
+                margin-left: 15%;
+                margin-right: 15%;
+            }
+
+            .body-akademik .site-footer-info .text-daftar{
+                
+                width: 100%;
+            }
+
+            .body-akademik .site-footer-info .text-daftar p {
+                font-size: 20px;
+            }
+
+            .body-akademik  .site-footer-info img{
+                height: 150px;
+            }
+
+        }
+
+        @media only screen and (min-width: 731px){
+
+        }
+
+
+
+    </style>
+</head>
+<body class="body-akademik">
+    <!-- Header -->
+    <div class="site-banner-info">
+        <img src="../assets/images/banner_akademik.jpg" />
+    </div>
+
+    <!-- Kegiatan Pembelajaran -->
+    <div style="margin: 5%;">
+        <h2>Kegiatan Pembelajaran</h2>
+        <hr style="
+      width: 30%;
+      margin: auto;
+      border: 5px dotted #fb6667;
+      border-style: none none dotted; 
+      color: #fff; 
+      background-color: #fff;">
+      <div style="margin-top: 50px; width: 100%; background-color: violet;">
+        <div style="width: 95%; margin: auto;  height: auto; background-color: tomato;">
+            <div class="column-item">
+                <img src="../assets/images/icon_moral.png" alt="icon_moral">
+                <div class="desc">Program pembelajaran agama dan akhlak mulia dimaksudkan untuk peningkatan potensi spiritual peserta didik melalui contoh pengalaman dari pendidik agar menjadi kebiasaan sehari-hari, baik di dalam mapupun di luar sekolah sehingga menjadi bagian dari budaya sekolah.</div>
+            </div>
+            <div class="column-item">
+                <img src="../assets/images/icon_sosial.png" alt="icon_sosial">
+                <div class="desc">Program pembelajaran social dan kepribadian dimaksudkan untuk pembentukan kesadaran dan wawasan peserta didik atas hak dan kewajibannya sebagai warga masyarakat dan dalam interaksi social serta pemahaman terhadap diri dan peningkatan kulaitas diri sebagai manusia sehingga memiliki rasa percaya diri.</div>
+            </div>
+            <div class="column-item">
+                <img src="../assets/images/icon_knowledge.png" alt="icon_knowledge">
+                <div class="desc">Program pembelajaran pengenalan teknologi dimaksudkan untuk mempersiapkan peserta didik untuk memasuki SD, dengan menekankan pada penyiapan kemampuan berkomunikasi melaui berbicara, mendengarkan, pramembaca, pramenulis, dan praberhitung.</div>
+            </div>
+            <div class="column-item">
+                <img src="../assets/images/icon_olahraga.png" alt="icon_olahraga">
+                <div class="desc">Program pembelajaran jasmani, olahraga, dan kesehatan dimaksudkan untuk meningkatkan potensi fisik dan menanamkan sportivitas serta kesadaran hidup sehat dan bersih.                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="site-footer-info">    
+        <img src="../assets/images/banner_footer.jpg" />
+        <div class="text-daftar">
+            <p>Daftakan Anak Kesayangan Anda <br> Kepada Kami Sekarang!</p>
+        </div>
+    </footer>
+
+</body>
+</html>

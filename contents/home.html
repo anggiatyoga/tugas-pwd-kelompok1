@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- <link rel="stylesheet" href="../assets/css/styles.css"> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Cabin:wght@400;700&family=Lato&display=swap" rel="stylesheet">
+    
+    <style>
+        /* HOME */
+    * {
+        margin: 0;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .body-home h2 {
+        font-family: 'Amatic SC', cursive;
+        font-size: 2em;
+        text-decoration: none;
+        color: #353331;
+        text-align: center; 
+        margin-bottom: 10px;
+    }
+
+    .body-home  .site-banner-info img{
+        width: 100%;
+        height: 300px;
+    }
+
+    .body-home .column-image {
+        float: left;
+        width: 35%;
+        padding: 10px;
+        margin-left: 10%;
+    }
+      
+    .body-home .column-image img {
+        opacity: 0.9; 
+        cursor: pointer; 
+        width:320px;
+        height: 240px;
+        margin-bottom: 20%;
+    }
+    
+    .body-home .column-image img:hover {
+        opacity: 1;
+    }
+
+    .body-home .column-profile {
+        margin-left: 50px;
+        float: left;
+        width: 210px;
+    }
+
+    .body-home .column-profile img {
+        box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.3);
+        width: 100%;
+        height: auto;
+    }
+
+    .body-home .column-profile .desc {
+        font-family: 'Lato', sans-serif;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .body-home footer {
+        position: relative;
+        display: flex !important;
+        width: 100%;
+        align-items: center;
+    }
+
+    .body-home  .site-footer-info img{
+        filter: brightness(50%);
+        margin-top: 10%;
+        width: 100%;
+        height: 310px;
+    }
+
+    .body-home .site-footer-info .text-daftar{
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    
+
+    .body-home .site-footer-info .text-daftar p{
+        font-family: 'Amatic SC', cursive;
+        font-size: 3em;
+        text-align: center;
+        color:  #ffffff;
+    }
+
+    .body-home .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+
+    @media only screen and (max-width: 731px){
+        .body-home  .site-banner-info img{
+            height: 200px;
+        }
+
+        .body-home .site-footer-info .text-daftar{
+            
+            width: 100%;
+        }
+
+        .body-home .site-footer-info .text-daftar p {
+            font-size: 20px;
+        }
+
+        .body-home .column-image {
+            width: 100%;
+            padding: 0;
+            margin-left: 0;
+        }
+
+        .body-home  .site-footer-info img{
+            height: 150px;
+        }
+    }
+
+    @media only screen and (max-width: 731px){
+        .body-home  .site-banner-info img{
+            height: 200px;
+        }
+
+        .body-home .site-footer-info .text-daftar{
+            
+            width: 100%;
+        }
+
+        .body-home .site-footer-info .text-daftar p {
+            font-size: 20px;
+        }
+
+        .body-home .column-image {
+            width: 100%;
+            padding: 0;
+            margin-left: 0;
+        }
+
+        .body-home  .site-footer-info img{
+            height: 150px;
+        }
+
+    }
+
+    @media only screen and (max-width: 1020px){
+
+        .body-home .column-image {
+            width: 100%;
+            padding: 0;
+            margin-left: 0;
+        }
+
+        .body-home  .site-footer-info img{
+            height: 150px;
+        }
+
+    }
+    
+    /* HOME */
+    </style>
+</head>
+
+<body class="body-home">
+    <!-- Header -->
+    <div class="site-banner-info">
+        <img src="../assets/images/banner_home.jpg" />
+    </div>
+
+    <!-- Profil Singkat -->
+    <div style="margin: 5%;">
+        <h2>Profil Singkat</h2>
+        <hr style="
+      width: 20%;
+      margin: auto;
+      border: 5px dotted #fb6667;
+      border-style: none none dotted; 
+      color: #fff; 
+      background-color: #fff;">
+        <p style="margin-top: 50px; font-family: 'Cabin', sans-serif; color: #8F8F8F;">KB-TK
+            Quantum Inti Indonesia adalah sebuah ”learning school”, dimana siswa belajar dari guru, staf, dan lingkungan sekolah, serta sebaliknya, guru dan staf belajar dari siswa dan orang tua/keluarga siswa serta dari masyarakat dan lingkungan sekolah. Seluruh individu dan komponen di sekolah menjadi media belajar sekaligus menjadi pembelajar.</p>
+    </div>
+
+    <!-- Aktivitas Murid -->
+    <div style="margin: 10% 5% 10%">
+        <h2>Aktivitas Murid</h2>
+        <hr style="
+            width: 20%;
+            margin: auto;
+            border: 5px dotted #fb6667;
+            border-style: none none dotted; 
+            color: #fff; 
+            background-color: #fff;">
+        <center>
+            <div class="row" style="margin-top: 50px;">
+                <div class="column-image">
+                    <img src="../assets/images/aktivitas1.jpg"  alt="Aktivitas1_Failed" >
+                    <img src="../assets/images/aktivitas2.jpg" alt="Aktivitas2_Failed" >
+                  </div>
+                 
+                  <div class="column-image">
+                    <img src="../assets/images/aktivitas3.jpg" alt="Aktivitas3_Failed">
+                    <img src="../assets/images/aktivitas4.jpg" alt="Aktivitas4_Failed" >
+                  </div>
+            </div>
+        </center>
+    </div>
+
+    
+
+    <!-- Tenaga Pengajar -->
+    <div style="margin: 10% 5% 10%">
+        <h2>Tenaga Pengajar</h2>
+        <hr style="
+            width: 20%;
+            margin: auto;
+            border: 5px dotted #fb6667;
+            border-style: none none dotted; 
+            color: #fff; 
+            background-color: #fff;">
+        <div class="row-pengajar" style="margin-top: 50px; background-color: darkgrey;">
+            <div style="margin: auto; width: 95%; height: auto; background-color: darkmagenta;">
+                <div class="column-profile">
+                    <img src="https://tkislamrahmatullah.com/wp-content/uploads/2020/03/yuliani-1536x1536.jpg" alt="Ibu Yuliani">
+                    <div class="desc">Ibu Yuliani<br>Kepala Sekolah</div>
+                </div>
+                <div class="column-profile">
+                    <img src="https://tkislamrahmatullah.com/wp-content/uploads/2020/03/ririn-nurhayati-1536x1536.jpg" alt="Ibu Ririn">
+                    <div class="desc">Ibu Ririn<br></be>Guru TK A</div>
+                </div>
+                <div class="column-profile">
+                    <img src="https://tkislamrahmatullah.com/wp-content/uploads/2020/03/nita-kurniawati-1536x1536.jpg" alt="Ibu Nita">
+                    <div class="desc">Ibu Nita<br>Guru Seni</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <audio controls autoplay style="display: none;">
+        <source src="../assets/images/audio-home.mp3" type="audio/mpeg">
+      </audio>
+
+    
+
+    <footer class="site-footer-info">    
+        <img src="../assets/images/banner_footer.jpg" />
+        <div class="text-daftar">
+            <p>Daftakan Anak Kesayangan Anda <br> Kepada Kami Sekarang!</p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

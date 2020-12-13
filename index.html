@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KB-TK Quantum Inti Indonesia</title>
+    <link rel="icon" type="image/svg" href="./assets/images/logo.svg">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Cabin:wght@400;700&family=Lato&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <div class="layout-row">
+          <div class="layout-column layout-sidebar-menu">
+
+                <div class="logo-profile" style="background-color: #7494da;">
+                    
+                    <img class="site-logo" src="./assets/images/logo.svg" alt="[Image] - No Loaded" width="170" height="170">
+                    <p class="site-title">KB-TK <br>Quantum Inti Indonesia</p>
+                </div>
+                <a class ="site-menu" href='#' onClick="changeContent('./contents/home.html')">HOME</a>
+                <a class ="site-menu" href='#' onClick="changeContent('./contents/profile.html')">PROFILE</a>
+                <a class ="site-menu" href='#' onClick="changeContent('./contents/akademik.html')">AKADEMIK</a>
+                <a class ="site-menu" href='#' onClick="changeContent('./contents/pengajar.html')">PENGAJAR</a>
+                <a class ="site-menu" href='#' onClick="changeContent('./contents/prestasi.html')">PRESTASI</a>
+                <a class ="site-menu" href='#' onClick="changeContent('./contents/peraturan.html')">PERATURAN</a>
+                <a class ="site-menu" href='#' onClick="changeContent('./contents/pendaftaran.html')">PENDAFTARAN</a>
+                
+           </div>
+
+          <div class="layout-column layout-sidebar-content">
+              
+          <!-- MENU MOBILE -->
+        <label for="check" class="mobile-menu">
+            <div class="container" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
+        </label>  
+        <!-- </div> -->
+
+          <!-- SIDEBAR -->
+          <input type="checkbox" id="check">
+          <div class="sidebar-mobile">
+              <ul>
+                  <a  href='#' onClick="changeContent('./contents/home.html')"><li>HOME</li></a>
+                  <a  href='#' onClick="changeContent('./contents/profile.html')"><li>PROFILE</li></a>
+                  <a  href='#' onClick="changeContent('./contents/akademik.html')"><li>AKADEMIK</li></a>
+                  <a  href='#' onClick="changeContent('./contents/pengajar.html')"><li>PENGAJAR</li></a>
+                  <a  href='#' onClick="changeContent('./contents/prestasi.html')"><li>PRESTASI</li></a>
+                  <a  href='#' onClick="changeContent('./contents/peraturan.html')"><li>PERATURAN</li></a>
+                  <a  href='#' onClick="changeContent('./contents/pendaftaran.html')"><li>PENDAFTARAN</li></a>
+              </ul>
+          </div>
+          
+          <!-- DEFAULT SRC CONTENT IS HOME PAGE -->
+          <iframe id='frameContent' src='./contents/home.html' frameborder='0' allowfullscreen ></iframe>
+          </div>
+
+
+    </div>
+        
+   
+<script src="./assets/js/site.js"></script>
+</body>
+</html>
